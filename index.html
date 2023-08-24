@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment </title>
+    <style>
+        .container {
+            height: 350px;
+            background-color: rgb(253, 235, 208);
+            border: 2px solid black;
+            width: 350px;
+            margin-top: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 3px 2px 2px rgb(191, 190, 190);
+        }
+
+        .pizza-img {
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .btn {
+            height: 30px;
+            width: 50px;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+
+        .b1 {
+            background-color: rgb(246, 38, 38);
+        }
+
+        .b2 {
+            background-color: rgb(57, 246, 57);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./pizza.png" class="pizza-img" />
+        <h2 class="heading">paneer pizza</h2>
+
+        <button onclick="decrement()" class="btn b1">-</button>
+
+        <span id="quantity">1</span>
+
+        <button onclick="increment()" class="btn b2">+</button>
+
+    </div>
+
+    <script>
+        const quantityElement = document.getElementById('quantity');
+        let quantity = parseInt(quantityElement.innerText);
+
+        function increment() {
+            quantityElement.innerText = ++quantity;
+        }
+
+        function decrement() {
+            quantityElement.innerText = --quantity;
+        }
+    </script>
+</body>
+
+</html>
