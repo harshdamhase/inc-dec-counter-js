@@ -32,28 +32,34 @@
         .btn {
             height: 30px;
             width: 50px;
-            margin-left: 20px;
             margin-top: 40px;
         }
 
         .b1 {
             background-color: rgb(246, 38, 38);
+            margin-left: 30px;
+
         }
 
         .b2 {
             background-color: rgb(57, 246, 57);
+            margin-left: 50px;
         }
+.one{
+    margin-left: 30px;
+}          
     </style>
 </head>
 
 <body>
     <div class="container">
+        <h2 class="heading">Inc dec counter</h2>
         <img src="./pizza.png" class="pizza-img" />
         <h2 class="heading">paneer pizza</h2>
 
         <button onclick="decrement()" class="btn b1">-</button>
 
-        <span id="quantity">1</span>
+        <span id="quantity" class="one">1</span>
 
         <button onclick="increment()" class="btn b2">+</button>
 
